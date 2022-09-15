@@ -2,6 +2,7 @@ const items = document.querySelectorAll('.listItem');
 const rate = document.querySelector('.ratingCard');
 const thanks = document.querySelector('.thanksCard');
 const ratingPoint = document.querySelector('.ratingPoint');
+const warning = document.querySelector('.warning');
 let point;
 
 function getRatingPoint(e) {
@@ -21,9 +22,10 @@ function submitRating() {
     if(point != null) {
         rate.style.display = 'none';
         thanks.style.display = 'block';
+        warning.style.display = 'none';
         ratingPoint.innerHTML = point;
     } else {
-        alert('Please rate before submit')
+        warning.style.display = 'block';
     }
     
 }

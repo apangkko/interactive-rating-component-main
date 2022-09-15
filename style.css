@@ -93,6 +93,13 @@ body {
     background-color: hsl( var(--clr-orange) );
 }
 
+.warning {
+    display: none;
+    text-align: center;
+    color: hsl( var(--clr-orange) );
+    font-size: 0.8rem;
+}
+
 .btn {
     color: hsl( var(--clr-white) );
     font-weight: 700;
