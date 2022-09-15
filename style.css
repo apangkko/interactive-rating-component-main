@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --clr-orange: 25, 97%, 53%;
+    --clr-white: 0, 0%, 100%;
+    --clr-lightGray: 217, 12%, 63%;
+    --clr-mediumGray: 216, 12%, 54%;
+    --clr-darkBlue: 213, 19%, 18%;
+    --clr-veryDarkBlue: 216, 12%, 8%;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Overpass', sans-serif;
+    font-size: 0.938rem;
+    font-weight: 400;
+    background-color: hsl( var(--clr-veryDarkBlue) );
+    line-height: 1.5;
+    color: hsl( var(--clr-lightGray) );
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    place-items: center;
+}
+
+.container {
+    width: 95%;
+    max-width: 412px;
+    margin: 0 auto;
+    background-color: hsl( var(--clr-darkBlue) );
+    padding: 30px 32px;
+    border-radius: 30px;
+}
+
+.circleBg {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: hsla( var(--clr-white), .1 );
+}
+
+.centerInCircle {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.heading-text {
+    color: hsl( var(--clr-white) );
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.text {
+    line-height: 1.5;
+}
+
+.listItems {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.listItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: hsl( var(--clr-lightGray) );
+    font-weight: 700;
+    padding-top: 3px;
+}
+
+.listItem:hover {
+    color: hsl( var(--clr-white) );
+    background-color: hsl( var(--clr-mediumGray) );
+}
+
+.listItem.active {
+    color: hsl( var(--clr-white) );
+    background-color: hsl( var(--clr-orange) );
+}
+
+.btn {
+    color: hsl( var(--clr-white) );
+    font-weight: 700;
+    letter-spacing: 0.125rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    background-color: hsl( var(--clr-orange) );
+    border-radius: 100px;
+    padding: 0.7rem 0.25rem;
+}
+
+.btn:hover {
+    color: hsl( var(--clr-orange));
+    background-color: hsl( var(--clr-white) );
+}
+
+.thanksCard {
+    text-align: center;
+    display: none;
+}
+
+.iconThanks {
+    display: block;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.ratingCircle {
+    display: inline-block;
+    background-color: hsla( var(--clr-white), .1 );
+    color: hsl( var(--clr-orange) );
+    margin-top: 2rem;
+    padding: 0.3em 1em;
+    border-radius: 100px;
+}
