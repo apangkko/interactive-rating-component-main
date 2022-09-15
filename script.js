@@ -22,6 +22,8 @@ function submitRating() {
         rate.style.display = 'none';
         thanks.style.display = 'block';
         ratingPoint.innerHTML = point;
+    } else {
+        alert('Please rate before submit')
     }
     
 }
